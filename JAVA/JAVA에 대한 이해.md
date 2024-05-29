@@ -2,7 +2,7 @@
 
 ## 자바 컴파일과 실행
 
-![Untitled](JAVA%E1%84%8B%E1%85%A6%20%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%205ba07334d5dd4b699b9c6e0700ac81a6/Untitled.png)
+![alt text](Images/javaUnderstand1.png)
 
 ### 컴파일 과정
 
@@ -20,6 +20,6 @@
 
 ## 자바와 운영체제 독립성
 
-![Untitled](JAVA%E1%84%8B%E1%85%A6%20%E1%84%83%E1%85%A2%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2%205ba07334d5dd4b699b9c6e0700ac81a6/Untitled%201.png)
+![alt text](Images/javaUnderstand2.png)
 
 - 자바가 설치 되어 있다면, 어떤 OS에서든 자바 프로그램을 실행할 수 있다.
