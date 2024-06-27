@@ -4,7 +4,7 @@
 
 확장된 자바스크립트의 문법을 말함 ⇒ 자바스크립트 내부에 HTML을 포함시킬 수 있음
 
-![Untitled](JSX%E1%84%85%E1%85%A9%20UI%20%E1%84%91%E1%85%AD%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20f6df4aaa14e2472e94f03c7c00b36457/Untitled.png)
+![alt text](static/jsx.png)
 
 ### 주의 사항
 
@@ -47,11 +47,11 @@ export default Main;
 
 Main.css 파일을 따로 만들어서 import를 통해 적용 시킨다.
 
-![Untitled](JSX%E1%84%85%E1%85%A9%20UI%20%E1%84%91%E1%85%AD%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20f6df4aaa14e2472e94f03c7c00b36457/Untitled%201.png)
+![alt text](static/jsx1.png)
 
-![Untitled](JSX%E1%84%85%E1%85%A9%20UI%20%E1%84%91%E1%85%AD%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20f6df4aaa14e2472e94f03c7c00b36457/Untitled%202.png)
+![alt text](static/jsx2.png)
 
-![Untitled](JSX%E1%84%85%E1%85%A9%20UI%20%E1%84%91%E1%85%AD%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%20f6df4aaa14e2472e94f03c7c00b36457/Untitled%203.png)
+![alt text](static/jsx3.png)
 
 <aside>
 💡 JSX에서 자바스크립트와 HTML을 같이 사용하고 있기 때문에 class를 사용할 수 없다.
