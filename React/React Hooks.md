@@ -50,8 +50,6 @@ export default Hookexam
 
 ### 반복되는 로직을 따로 파일로 구분
 
-![Untitled](React%20Hooks%2053219c04c62343f0b46e64b0d116620a/Untitled.png)
-
-![Untitled](React%20Hooks%2053219c04c62343f0b46e64b0d116620a/Untitled%201.png)
-
-![Untitled](React%20Hooks%2053219c04c62343f0b46e64b0d116620a/Untitled%202.png)
+![alt text](Images/hooks1.png)
+![alt text](Images/hooks2.png)
+![alt text](Images/hooks3.png)
