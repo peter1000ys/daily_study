@@ -26,8 +26,7 @@ public class Main {
         String str = stringBuilder.toString();
         System.out.println(str);
         System.out.println(stringBuilder);
-    }
-}
+    } 
 
 
 // 결과 값 :
