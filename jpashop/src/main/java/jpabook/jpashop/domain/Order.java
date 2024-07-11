@@ -4,7 +4,9 @@ package jpabook.jpashop.domain;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -17,6 +19,8 @@ import static jakarta.persistence.FetchType.LAZY;
 //SQL문 중 ORDER랑 겹치기 때문에 테이블 이름을 변경
 @Table(name = "orders")
 @Getter @Setter
+// 직접 생성 방지, 생성 메서드를 써서 생성하게 제약
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Order {
     @Id @GeneratedValue
     @Column(name = "order_id")
