@@ -6,6 +6,7 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
+      # create : 애플리케이션 실행 시 테이블 드랍 후 다시 만듦, none : 계속 남아 있음
       ddl-auto: create
     properties:
       hibernate:
