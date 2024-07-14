@@ -33,6 +33,7 @@ public class Order {
     @JoinColumn(name = "member_id")
     private Member member;
 
+
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
