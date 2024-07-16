@@ -23,18 +23,20 @@ public class SecurityConfig {
     }
 
     @Bean
-    protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable());
         http.authorizeRequests( request -> {
             request.requestMatchers("/user/**").authenticated();
             request.requestMatchers("/manger/**").access("hasRole('ADMIN') or hasRole('MANAGER')");
             request.requestMatchers("/admin/**").access("hasRole('ADMIN')");
             request.requestMatchers("/").permitAll();
-//            request.anyRequest().permitAll();
-//            request.antMatchers("/user/**").authenticated()
                 });
-        http.formLogin(form -> form
-                .loginPage("/loginForm"));
+        http.formLogin(form -> {
+            form.loginPage("/loginForm");
+            form.loginProcessingUrl("/login");        // 로그인 주소가 호출이 되면 시큐리티가 낚아 채서 대신 로그인을 진행
+            form.defaultSuccessUrl("/");
+        });
+
 
         return http.build();
     }
