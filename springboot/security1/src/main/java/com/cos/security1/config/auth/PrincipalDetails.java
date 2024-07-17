@@ -9,19 +9,40 @@ package com.cos.security1.config.auth;
 // Security Session => Authentication => UserDetails
 
 import com.cos.security1.model.User;
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.Map;
 
-public class PrincipleDetails implements UserDetails {
+@Data
+public class PrincipalDetails implements UserDetails, OAuth2User {
 
     private User user;
+    private Map<String, Object> attributes;
 
-    public PrincipleDetails(User user) {
+    // 일반 로그인
+    public PrincipalDetails(User user) {
         this.user = user;
+    }
+
+    // OAuth 로그인
+    public PrincipalDetails(User user, Map<String, Object> attributes) {
+        this.user = user;
+        this.attributes = attributes;
+    }
+
+    @Override
+    public <A> A getAttribute(String name) {
+        return OAuth2User.super.getAttribute(name);
+    }
+
+    @Override
+    public Map<String, Object> getAttributes() {
+        return attributes;
     }
 
     // 해당 유저의 권한을 리턴
@@ -67,5 +88,10 @@ public class PrincipleDetails implements UserDetails {
 
         // 1년동안 로그인하지 않은 휴먼 계정
         return true;
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 }
