@@ -21,7 +21,7 @@ public class PrincipalDetails implements UserDetails {
     public User getUser() {
         return user;
     }
-
+    
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> authorities = new ArrayList<>();

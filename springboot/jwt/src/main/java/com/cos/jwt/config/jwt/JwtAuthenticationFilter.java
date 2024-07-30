@@ -27,6 +27,7 @@ import static org.springframework.security.config.Elements.JWT;
 // UsernamePasswordAuthenticationFilter 동작을 함.
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+
     private final AuthenticationManager authenticationManager;
 
     // /login 요청을 하면 로그인 시도를 하기 위해서 실행

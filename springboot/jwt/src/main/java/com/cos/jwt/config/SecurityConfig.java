@@ -41,7 +41,7 @@ public class SecurityConfig {
 //        http.addFilterBefore(new MyFilter1(), SecurityContextHolderFilter.class);
         // 서버는 CORS 정책에서 벗어날 수 있다.
         http.addFilter(corsFilter);
-        http.addFilter(new JwtAuthenticationFilter(authenticationManager)); // AuthenticationManager
+        http.addFilter(new JwtAuthenticationFilter(authenticationManager));
         http.addFilter(new JwtAuthorizationFilter(authenticationManager, userRepository));
         // formLogin 사용하지 않는다
         http.formLogin(formLogin -> formLogin.disable());
